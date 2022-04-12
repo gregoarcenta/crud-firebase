@@ -1,0 +1,34 @@
+<li class="list-group-item shadow rounded-3 mb-3">
+  <div class="d-flex justify-content-between">
+    <p class="text-muted fst-italic m-0">
+      -- {{post.autor | titlecase}}
+    </p>
+    <div class="icons d-flex">
+      <span tooltip="Ver mas..." [options]="options">
+        <bi
+          name="eye-fill"
+          class="me-3"
+          [routerLink]="['/posts', post.id]"
+        ></bi>
+      </span>
+      <span tooltip="Editar" [options]="options">
+        <bi
+          name="pen-fill"
+          class="me-3"
+          [routerLink]="['/posts/editar', post.id]"
+        ></bi>
+      </span>
+      <span tooltip="Eliminar" [options]="options">
+        <bi
+          name="trash2-fill"
+          class="text-danger"
+          (click)="deletePost(post)"
+        ></bi>
+      </span>
+    </div>
+  </div>
+  <p class="fw-bolder text-center mt-4">{{post.title}}</p>
+  <p class="fw-lighter text-justify text-truncate">
+    {{post.content}}
+  </p>
+</li>

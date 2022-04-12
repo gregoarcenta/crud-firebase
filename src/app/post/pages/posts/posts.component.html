@@ -1,0 +1,14 @@
+<ng-container>
+  <div class="d-grid d-md-flex justify-content-md-end mb-3">
+    <button class="btn btn-primary" [routerLink]="['/posts/agregar']">
+      Agregar Post
+    </button>
+  </div>
+  <ul class="list-group">
+    <post-item
+      *ngFor="let post of posts"
+      [post]="post"
+      (onDeletePost)="deletePost($event)"
+    ></post-item>
+  </ul>
+</ng-container>
