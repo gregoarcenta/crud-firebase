@@ -18,6 +18,6 @@ const icons = {
 @NgModule({
   declarations: [],
   imports: [BootstrapIconsModule.pick(icons)],
-  exports: [BootstrapIconsModule, TooltipModule],
+  exports: [BootstrapIconsModule],
 })
 export class IconsModule {}

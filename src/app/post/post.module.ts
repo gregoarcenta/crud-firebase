@@ -10,6 +10,8 @@ import { PostItemComponent } from "./components/post-item/post-item.component";
 import { IconsModule } from "../icons/icons.module";
 import { PostComponent } from "./pages/post/post.component";
 import { ReactiveFormsModule } from "@angular/forms";
+import { NgxSkeletonLoaderModule } from "ngx-skeleton-loader";
+import { TooltipModule } from "ng2-tooltip-directive";
 
 @NgModule({
   declarations: [
@@ -18,6 +20,15 @@ import { ReactiveFormsModule } from "@angular/forms";
     PostItemComponent,
     PostComponent,
   ],
-  imports: [CommonModule, PostRoutingModule, ReactiveFormsModule, IconsModule],
+  imports: [
+    CommonModule,
+    PostRoutingModule,
+    ReactiveFormsModule,
+    IconsModule,
+    TooltipModule,
+    NgxSkeletonLoaderModule.forRoot({
+      animation: "pulse",
+    }),
+  ],
 })
 export class PostModule {}

@@ -12,3 +12,7 @@
     ></post-item>
   </ul>
 </ng-container>
+
+<div class="loader-posts" *ngIf="loading">
+  <ngx-skeleton-loader count="4" appearance="line"></ngx-skeleton-loader>
+</div>

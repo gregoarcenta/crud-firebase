@@ -10,6 +10,7 @@ import Swal from "sweetalert2";
 })
 export class PostsComponent implements OnInit {
   posts: Post[] = [];
+  loading: boolean = true;
 
   constructor(private postService: PostService) {}
 
@@ -18,6 +19,7 @@ export class PostsComponent implements OnInit {
       this.posts = posts.map((e) => {
         return { ...(e.payload.doc.data() as Post), id: e.payload.doc.id };
       });
+      this.loading = false;
     });
   }
 

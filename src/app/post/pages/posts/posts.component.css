@@ -1,0 +1,10 @@
+/* file: `my-ngx-skeleton-loader-with-theming.component.css`
+ *
+ * You can find more details about `:host` at
+ * Angular Component Style Docs https://angular.io/guide/component-styles#host
+ */
+ :host >>> .loader-posts .loader {
+  border-radius: 10px;
+  height: 150px;
+  border: 1px solid white;
+ }
