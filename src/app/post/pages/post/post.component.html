@@ -1,8 +1,15 @@
-<p class="text-center">
-  Estas viendo el post con el id: <span class="fw-bolder">{{postId}}</span>
-</p>
 <div *ngIf="post">
-  <p>{{post.autor}}</p>
-  <p>{{post.title}}</p>
-  <p>{{post.content}}</p>
+  <p class="fw-bold text-center">{{post.autor}}</p>
+  <h5 class="text-muted text-center">{{post.title}}</h5>
+  <p class="text-justify mt-3">{{post.content}}</p>
+</div>
+<div>
+  <bi
+    name="arrow-left"
+    class="mt-4 mt-md-0 align-self-center"
+    tooltip="Regresar a los Posts"
+    placement="bottom"
+    [hideDelay]="100"
+    [routerLink]="['/posts']"
+  ></bi>
 </div>

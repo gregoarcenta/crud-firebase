@@ -8,3 +8,7 @@ bi {
 bi:hover{
   transform: scale(1.5);
 }
+
+.text-justify{
+  text-align: justify;
+}
