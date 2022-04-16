@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Post } from "../../interfaces/Post";
 import { PostService } from "../../services/post.service";
 
@@ -11,6 +12,8 @@ import { PostService } from "../../services/post.service";
 export class PostComponent implements OnInit {
   postId!: string;
   post!: Post;
+
+  faArrowLeft = faArrowLeft;
 
   constructor(
     private route: ActivatedRoute,

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
+import { faPen, faTrashCan, faEye } from "@fortawesome/free-solid-svg-icons";
 import Swal from "sweetalert2";
 import { Post } from "../../interfaces/Post";
 
@@ -10,6 +11,10 @@ import { Post } from "../../interfaces/Post";
 export class PostItemComponent implements OnInit {
   @Input() post!: Post;
   @Output() onDeletePost: EventEmitter<Post> = new EventEmitter();
+
+  faPen = faPen;
+  faTrash = faTrashCan;
+  faEye = faEye;
 
   options = {
     placement: "bottom",

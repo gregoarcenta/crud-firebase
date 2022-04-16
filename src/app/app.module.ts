@@ -2,6 +2,8 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgxFloatButtonModule } from "@corentinmag/ngx-float-button";
 
 //firebase
 import { AngularFireModule } from "@angular/fire/compat";
@@ -22,6 +24,8 @@ import { AppComponent } from "./app.component";
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    BrowserAnimationsModule,
+    NgxFloatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

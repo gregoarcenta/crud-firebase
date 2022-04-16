@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { Post } from "../../interfaces/Post";
 import { PostService } from "../../services/post.service";
 import Swal from "sweetalert2";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-agregar-editar",
@@ -13,6 +14,8 @@ import Swal from "sweetalert2";
 export class AgregarEditarComponent implements OnInit {
   postId!: string;
   post!: Post;
+
+  faArrowLeft = faArrowLeft;
 
   postForm: FormGroup = this.fb.group({
     autor: ["", Validators.required],

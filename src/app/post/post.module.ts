@@ -1,17 +1,16 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-
 import { PostRoutingModule } from "./post-routing.module";
+import { ReactiveFormsModule } from "@angular/forms";
+import { NgxSkeletonLoaderModule } from "ngx-skeleton-loader";
+import { TooltipModule } from "ng2-tooltip-directive";
 
 //components
 import { PostsComponent } from "./pages/posts/posts.component";
 import { AgregarEditarComponent } from "./pages/agregar-editar/agregar-editar.component";
 import { PostItemComponent } from "./components/post-item/post-item.component";
-import { IconsModule } from "../icons/icons.module";
 import { PostComponent } from "./pages/post/post.component";
-import { ReactiveFormsModule } from "@angular/forms";
-import { NgxSkeletonLoaderModule } from "ngx-skeleton-loader";
-import { TooltipModule } from "ng2-tooltip-directive";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [
@@ -24,7 +23,7 @@ import { TooltipModule } from "ng2-tooltip-directive";
     CommonModule,
     PostRoutingModule,
     ReactiveFormsModule,
-    IconsModule,
+    FontAwesomeModule,
     TooltipModule,
     NgxSkeletonLoaderModule.forRoot({
       animation: "pulse",

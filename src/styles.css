@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-bi {
+fa-icon {
   cursor: pointer;
-  height: auto;
-  width: 1.3rem;
   transition: transform .2s linear;
-}
-bi:hover{
-  transform: scale(1.5);
+  font-size: 1.2rem;
 }
 
-.text-justify{
+fa-icon:hover {
+  transform: scale(1.3);
+}
+
+.text-justify {
   text-align: justify;
 }

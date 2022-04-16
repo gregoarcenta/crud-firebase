@@ -3,13 +3,15 @@
   <h5 class="text-muted text-center">{{post.title}}</h5>
   <p class="text-justify mt-3">{{post.content}}</p>
 </div>
-<div>
-  <bi
-    name="arrow-left"
+
+<div class="d-flex">
+  <fa-icon
+    [icon]="faArrowLeft"
     class="mt-4 mt-md-0 align-self-center"
+    style="font-size: 1.8rem;"
     tooltip="Regresar a los Posts"
     placement="bottom"
     [hideDelay]="100"
     [routerLink]="['/posts']"
-  ></bi>
+  ></fa-icon>
 </div>

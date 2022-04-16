@@ -4,27 +4,27 @@
       -- {{post.autor | titlecase}}
     </p>
     <div class="icons d-flex">
-      <span tooltip="Ver mas..." [options]="options">
-        <bi
-          name="eye-fill"
-          class="me-3"
-          [routerLink]="['/posts', post.id]"
-        ></bi>
-      </span>
-      <span tooltip="Editar" [options]="options">
-        <bi
-          name="pen-fill"
-          class="me-3"
-          [routerLink]="['/posts/editar', post.id]"
-        ></bi>
-      </span>
-      <span tooltip="Eliminar" [options]="options">
-        <bi
-          name="trash2-fill"
-          class="text-danger"
-          (click)="deletePost(post)"
-        ></bi>
-      </span>
+      <fa-icon
+        tooltip="Ver mas..."
+        [options]="options"
+        [icon]="faEye"
+        class="me-3"
+        [routerLink]="['/posts', post.id]"
+      ></fa-icon>
+      <fa-icon
+        tooltip="Editar"
+        [options]="options"
+        [icon]="faPen"
+        class="me-3"
+        [routerLink]="['/posts/editar', post.id]"
+      ></fa-icon>
+      <fa-icon
+        tooltip="Eliminar"
+        [options]="options"
+        [icon]="faTrash"
+        class="me-3 text-danger"
+        (click)="deletePost(post)"
+      ></fa-icon>
     </div>
   </div>
   <p class="fw-bolder text-center mt-4">{{post.title}}</p>
