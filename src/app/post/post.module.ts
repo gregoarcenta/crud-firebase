@@ -11,6 +11,7 @@ import { AgregarEditarComponent } from "./pages/agregar-editar/agregar-editar.co
 import { PostItemComponent } from "./components/post-item/post-item.component";
 import { PostComponent } from "./pages/post/post.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { LayoutComponent } from './pages/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
     AgregarEditarComponent,
     PostItemComponent,
     PostComponent,
+    LayoutComponent,
   ],
   imports: [
     CommonModule,

@@ -6,6 +6,10 @@ const routes: Routes = [
     path: "posts",
     loadChildren: () => import("./post/post.module").then((m) => m.PostModule),
   },
+  {
+    path: "mapas",
+    loadChildren: () => import("./map/map.module").then((m) => m.MapModule),
+  },
   { path: "**", redirectTo: "posts" },
 ];
 
