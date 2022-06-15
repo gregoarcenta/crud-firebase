@@ -1,0 +1,21 @@
+<div #map class="map"></div>
+<div class="container-zoom">
+  <label for="customRange1" class="form-label zoom">
+    Zoom: {{zoomLevel | number:'2.0-2'}} Lng,Lat: [{{lngLat[0] |
+    number:'2.0-5'}},{{lngLat[1] | number:'2.0-5'}}]
+  </label>
+  <input
+    type="range"
+    class="form-range"
+    id="customRange1"
+    [value]="zoomLevel"
+    min="0"
+    max="18"
+    (input)="zoomChange(zoomInput.value)"
+    #zoomInput
+  />
+  <div class="d-flex justify-content-between">
+    <button class="btn btn-primary" (click)="zoomOut()">-</button>
+    <button class="btn btn-primary" (click)="zoomIn()">+</button>
+  </div>
+</div>

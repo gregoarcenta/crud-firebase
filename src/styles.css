@@ -12,3 +12,13 @@ fa-icon:hover {
 .text-justify {
   text-align: justify;
 }
+
+.menu-map {
+  z-index: 1001;
+}
+
+.map {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}
