@@ -7,7 +7,8 @@ import { ZoomRangeComponent } from "./pages/zoom-range/zoom-range.component";
 import { MarcadoresComponent } from "./pages/marcadores/marcadores.component";
 import { PropiedadesComponent } from "./pages/propiedades/propiedades.component";
 import { MenuMapComponent } from "./components/menu-map/menu-map.component";
-import { LayoutMapComponent } from './components/layout-map/layout-map.component';
+import { LayoutMapComponent } from "./components/layout-map/layout-map.component";
+import { MiniMapComponent } from "./components/mini-map/mini-map.component";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { LayoutMapComponent } from './components/layout-map/layout-map.component
     PropiedadesComponent,
     MenuMapComponent,
     LayoutMapComponent,
+    MiniMapComponent,
   ],
   imports: [CommonModule, MapRoutingModule],
 })
