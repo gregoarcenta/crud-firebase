@@ -1,4 +1,5 @@
 <router-outlet></router-outlet>
+
 <ngx-float-button icon="add" [hoverable]="true">
   <ngx-float-item-button
     tooltip="Ver Posts"
@@ -9,5 +10,10 @@
     tooltip="Ver Mapas"
     icon="location_on"
     [routerLink]="['/mapas']"
+  ></ngx-float-item-button>
+  <ngx-float-item-button
+    tooltip="Ver Gráficas"
+    icon="bar_chart"
+    [routerLink]="['/graficas']"
   ></ngx-float-item-button>
 </ngx-float-button>

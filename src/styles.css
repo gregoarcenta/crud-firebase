@@ -22,3 +22,7 @@ fa-icon:hover {
   width: 100vw;
   z-index: 1000;
 }
+
+ul li {
+  cursor: pointer;
+}

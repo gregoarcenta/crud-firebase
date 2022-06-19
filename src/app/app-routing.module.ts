@@ -10,6 +10,11 @@ const routes: Routes = [
     path: "mapas",
     loadChildren: () => import("./map/map.module").then((m) => m.MapModule),
   },
+  {
+    path: "graficas",
+    loadChildren: () =>
+      import("./graphics/graphics.module").then((m) => m.GraphicsModule),
+  },
   { path: "**", redirectTo: "posts" },
 ];
 

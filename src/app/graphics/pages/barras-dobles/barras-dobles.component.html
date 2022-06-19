@@ -1,0 +1,15 @@
+<div class="row">
+  <h1>Gráficas dobles</h1>
+  <hr />
+  <div class="col-md-6">
+    <h6>Gráfica 1</h6>
+    <app-grafica-barra
+      [horizontal]="true"
+      [barChartData]="proveedoresData"
+    ></app-grafica-barra>
+  </div>
+  <div class="col-md-6">
+    <h6>Gráfica 2</h6>
+    <app-grafica-barra [barChartData]="productoData"></app-grafica-barra>
+  </div>
+</div>
